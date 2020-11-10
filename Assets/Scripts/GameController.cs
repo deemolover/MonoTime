@@ -24,8 +24,8 @@ public class GameController : MonoBehaviour
 
     public bool IsValidLocation((int, int) location)
     {
-        return 0 <= location.Item1 && location.Item1 < heightCount &&
-            0 <= location.Item2 && location.Item2 < widthCount;
+        return 0 <= location.Item1 && location.Item1 < widthCount &&
+            0 <= location.Item2 && location.Item2 < heightCount;
     }
 
     public (int, int) KeyToLocation(int key)
